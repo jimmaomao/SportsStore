@@ -13,7 +13,6 @@ c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\SportsStore.WebUI.Tests.dll.config
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\SportsStore.WebUI.Tests.dll
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\SportsStore.WebUI.Tests.pdb
-c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\Moq.dll
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\Ninject.dll
@@ -43,7 +42,15 @@ c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\System.Web.WebPages.xml
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\System.Web.WebPages.Razor.xml
-c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\obj\Debug\SportsStore.WebUI.Tests.csprojResolveAssemblyReference.cache
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\obj\Debug\SportsStore.WebUI.Tests.dll
 c:\users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\obj\Debug\SportsStore.WebUI.Tests.pdb
+C:\Users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\EntityFramework.dll
+C:\Users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\EntityFramework.xml
+C:\Users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\xjm\documents\visual studio 2015\Projects\SportsStore\SportsStore.WebUI.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
