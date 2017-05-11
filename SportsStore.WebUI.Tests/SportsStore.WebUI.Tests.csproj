@@ -104,18 +104,18 @@
     <Compile Include="CartTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="F:\visual studio 2015\Projects\SportsStore.Domain\SportsStore.Domain.csproj">
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SportsStore.Domain\SportsStore.Domain.csproj">
       <Project>{4eb22dd5-b6ac-4d05-8ec5-1dc03df56274}</Project>
       <Name>SportsStore.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="F:\visual studio 2015\Projects\SportsStore.WebUI\SportsStore.WebUI.csproj">
-      <Project>{74F5C3E6-1DA6-4E1C-916C-C9A357C61D63}</Project>
+    <ProjectReference Include="..\SportsStore.WebUI\SportsStore.WebUI.csproj">
+      <Project>{74f5c3e6-1da6-4e1c-916c-c9a357c61d63}</Project>
       <Name>SportsStore.WebUI</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
