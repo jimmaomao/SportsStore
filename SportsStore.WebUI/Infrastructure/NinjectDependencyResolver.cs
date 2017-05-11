@@ -5,6 +5,7 @@ using SportsStore.Domain.Concrete;
 using SportsStore.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -41,6 +42,12 @@ namespace SportsStore.WebUI.Infrastructure
             //    new Product { Name="Running shoes",Price=95},
             //});
             //kernel.Bind<IProductRepository>().ToConstant(mock.Object);
+
+            EmailSettings emailSettings = new EmailSettings
+            {
+                WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false")
+            };
+            kernel.Bind<IOderProcessor>().To<EmailOrderProcessor>().WithConstructorArgument("settings", emailSettings);
 
             //实际存储库绑定
             kernel.Bind<IProductRepository>().To<EFProductRepository>();

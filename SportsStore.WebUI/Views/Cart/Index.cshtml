@@ -5,7 +5,7 @@
 }
 
 <h2>Your Cart</h2>
-<table class="table">
+<table class="table" id="cartTable">
     <thead>
         <tr>
             <th>Quantity</th>
@@ -22,6 +22,14 @@
                 <td class="text-left">@line.Product.Name</td>
                 <td class="text-right">@line.Product.Price.ToString("c")</td>
                 <td class="text-right">@((line.Quentity*line.Product.Price).ToString("c"))</td>
+                <td>
+                    @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                    {
+                        @Html.Hidden("ProductId", line.Product.ProductID)
+                        @Html.HiddenFor(x=>x.ReturnUrl)
+                        <input  class="btn brn-sm btn-warning" type="submit" value="Remove"/>
+                    }
+                </td>
             </tr>
         }
     </tbody>
@@ -37,4 +45,5 @@
 
 <div class="text-center">
     <a class="btn btn-primary" href="@Model.ReturnUrl">Continues Shopping</a>
+    @Html.ActionLink("Checkout now","Checkout",null,new { @class="btn btn-priamry"})
 </div>

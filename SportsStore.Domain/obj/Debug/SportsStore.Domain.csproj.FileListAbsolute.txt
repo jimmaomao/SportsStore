@@ -45,4 +45,3 @@ C:\Users\xjm\Documents\Visual Studio 2015\Projects\SportsStore\SportsStore.Domai
 C:\Users\xjm\Documents\Visual Studio 2015\Projects\SportsStore\SportsStore.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
 C:\Users\xjm\Documents\Visual Studio 2015\Projects\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 C:\Users\xjm\Documents\Visual Studio 2015\Projects\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
-C:\Users\xjm\Documents\Visual Studio 2015\Projects\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
