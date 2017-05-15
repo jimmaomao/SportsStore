@@ -30,18 +30,21 @@
         @Html.HiddenFor(m => m.ProductID)
         @foreach (var property in ViewData.ModelMetadata.Properties)
         {
-            <div class="form-group">
-                <label>@(property.DisplayName ?? property.PropertyName)</label>
-                @if (property.PropertyName == "Description")
-                {
-                    @Html.TextArea(property.PropertyName, null, new { @class = "form-control", rows = 5 })
-                }
-                else
-                {
-                    @Html.TextBox(property.PropertyName, null, new { @class = "form-control" })
-                }
-                @Html.ValidationMessage(property.PropertyName)
-            </div>
+            if (property.PropertyName != "ProductID")
+            {
+                <div class="form-group">
+                    <label>@(property.DisplayName ?? property.PropertyName)</label>
+                    @if (property.PropertyName == "Description")
+                    {
+                        @Html.TextArea(property.PropertyName, null, new { @class = "form-control", rows = 5 })
+                    }
+                    else
+                    {
+                        @Html.TextBox(property.PropertyName, null, new { @class = "form-control" })
+                    }
+                    @Html.ValidationMessage(property.PropertyName)
+                </div>
+            }
         }
     </div>
 
