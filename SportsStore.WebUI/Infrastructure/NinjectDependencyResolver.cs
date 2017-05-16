@@ -3,6 +3,7 @@ using Ninject;
 using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Concrete;
 using SportsStore.Domain.Entities;
+using SportsStore.WebUI.Infrastructure.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -43,6 +44,7 @@ namespace SportsStore.WebUI.Infrastructure
             //});
             //kernel.Bind<IProductRepository>().ToConstant(mock.Object);
 
+            //邮件实现
             EmailSettings emailSettings = new EmailSettings
             {
                 WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false")
@@ -51,6 +53,9 @@ namespace SportsStore.WebUI.Infrastructure
 
             //实际存储库绑定
             kernel.Bind<IProductRepository>().To<EFProductRepository>();
+
+            //认证
+            kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }

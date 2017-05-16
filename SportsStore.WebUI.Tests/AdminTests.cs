@@ -95,7 +95,7 @@ namespace SportsStore.WebUI.Tests
 
             mock.Verify(m => m.SaveProduct(product));
 
-            Assert.IsInstanceOfType(result, typeof(ViewResult));
+            Assert.IsInstanceOfType(result, typeof(RedirectToRouteResult));
         }
 
         [TestMethod]

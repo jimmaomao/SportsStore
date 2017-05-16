@@ -196,5 +196,48 @@ namespace SportsStore.WebUI.Tests
             Assert.AreEqual(re3, 5);
         }
 
+        [TestMethod]
+        public void Can_Retrieve_Image_Data() {
+            Product prod = new Product {
+                ProductID=2,
+                Name="test",
+                ImageData=new byte[] { },
+                ImageMimeType="image/png"
+            };
+
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new Product[] {
+                new Product { ProductID=1,Name="P1"},
+                prod,
+                new Product { ProductID=3,Name="P3"}
+
+            }.AsQueryable());
+
+            ProductController controller = new ProductController(mock.Object);
+
+            ActionResult result = controller.GetImage(2);
+
+            Assert.IsNotNull(result);
+            Assert.IsInstanceOfType(result, typeof(FileResult));
+            Assert.AreEqual(prod.ImageMimeType, ((FileResult)result).ContentType);
+        }
+
+        [TestMethod]
+        public void Can_Retrieve_Image_Data_For_Invalid_ID()
+        {
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new Product[] {
+                new Product { ProductID=1,Name="P1"},
+                new Product { ProductID=2,Name="P2"}
+
+            }.AsQueryable());
+
+            ProductController controller = new ProductController(mock.Object);
+
+            ActionResult result = controller.GetImage(100);
+
+            Assert.IsNull(result);
+        }
+
     }
 }
